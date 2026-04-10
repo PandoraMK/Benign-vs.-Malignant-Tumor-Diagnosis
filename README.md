@@ -77,3 +77,28 @@ For both models, false positives and false negatives are extracted from the test
 - scikit-learn
 - statsmodels
 
+Install with:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
+```
+
+---
+
+##  Usage
+
+1. Clone the repo and place `data.csv` in the root directory
+2. Open `breast_cancer.ipynb` in Jupyter
+3. Run all cells from top to bottom
+
+---
+
+## Notes
+
+- Only **mean** features were used for modelling — standard error and worst-case measurements were excluded to keep the model interpretable
+- Linear regression was ruled out as the binary target variable requires a classification approach
+- No resampling was applied as the class imbalance (~37/63) is within an acceptable range
+
+---
+
+*Dataset: UCI ML Repository · Wisconsin Breast Cancer Diagnostic*
