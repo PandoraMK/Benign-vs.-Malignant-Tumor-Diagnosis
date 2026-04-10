@@ -20,8 +20,8 @@ Two classification models are built, validated, and compared — Logistic Regres
 - Correlation heatmap computed for all mean features — `radius_mean`, `perimeter_mean`, and `area_mean` found to be highly correlated and excluded from modelling
 
 ### 2. Feature selection
-Features with pairwise correlation above **0.80** were flagged for removal. VIF (Variance Inflation Factor) scores confirmed low multicollinearity among the retained features:
-texture_mean, smoothness_mean, compactness_mean, symmetry_mean and fractal_dimension_mean.
+Features with pairwise correlation above **0.80** were flagged for removal. The following features were then used for the modelling:
+texture_mean, smoothness_mean, compactness_mean, concavity_mean, concave points_mean, symmetry_mean and fractal_dimension_mean.
 
 ### 3. Train / test split
 - **70% training · 30% test** (`random_state=42`)
