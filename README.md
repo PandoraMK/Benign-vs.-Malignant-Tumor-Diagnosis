@@ -21,3 +21,4 @@ Two classification models are built, validated, and compared — Logistic Regres
 
 ### 2. Feature selection
 Features with pairwise correlation above **0.80** were flagged for removal. VIF (Variance Inflation Factor) scores confirmed low multicollinearity among the retained features:
+texture_mean, smoothness_mean, compactness_mean, symmetry_mean, fractal_dimension_mean
